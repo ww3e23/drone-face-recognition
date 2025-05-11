@@ -1,4 +1,9 @@
 flask
-deepface==0.0.78
-numpy
-opencv-python==4.5.5.64
+deepface
+opencv-python
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
+requests
+
