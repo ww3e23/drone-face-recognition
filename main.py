@@ -1,3 +1,15 @@
+import os
+import json
+import io
+from google.oauth2 import service_account
+
+# 讀取 Railway 的環境變數內容（是個 JSON 字串）
+service_account_info = json.loads(os.environ['GOOGLE_SERVICE_ACCOUNT_JSON'])
+
+# 用這個資訊初始化認證
+credentials = service_account.Credentials.from_service_account_info(service_account_info)
+
+
 import random
 import requests
 from google.oauth2 import service_account
