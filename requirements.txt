@@ -1,4 +1,4 @@
 flask
-deepface
+deepface==0.0.78
 numpy
-opencv-python-headless
+opencv-python==4.5.5.64
